@@ -1,7 +1,23 @@
 aid: mybox
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/mybox.png
 name: myBOX
-description: myBOX is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: myBOX was an on-demand self-storage service founded in 2015 in Seoul, South Korea, and
+  backed by 500 Global. It delivered storage boxes to a user's door for storing unused luggage and
+  goods, offering free pickup and a range of container sizes for documents, clothes, and bulky items.
+  The company has since permanently closed; its site (my-box.kr) no longer resolves and it exposes no
+  public API, developer portal, or technical surface. Retained in the API Evangelist network as an
+  enrichment lead; no API artifacts exist to harvest.
 url: https://raw.githubusercontent.com/api-evangelist/mybox/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +25,18 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: defunct
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Self Storage
+- On-Demand Storage
+- Logistics
+- Consumer
+- South Korea
+- Defunct
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +46,8 @@ maintainers:
 common:
 - type: Website
   url: https://my-box.kr
+x-enrichment:
+  date: '2026-07-20'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
